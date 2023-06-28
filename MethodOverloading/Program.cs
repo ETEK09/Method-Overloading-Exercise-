@@ -13,7 +13,7 @@ namespace MethodOverloading
             decimal answer2 = Add(65.23m, 542.1m);
             Console.WriteLine(answer2);
 
-            string answer3 = Add(10, 10, true);
+            string answer3 = Add(1, 0, true);
             Console.WriteLine(answer3);
         }
 
@@ -32,7 +32,7 @@ namespace MethodOverloading
         {
             int sum = num1 + num2;
 
-            if (isMoney == true) 
+            if (isMoney == true && sum > 1) 
             {
                 return $"{sum} dollars";
             
